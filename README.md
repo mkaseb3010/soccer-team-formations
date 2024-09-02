@@ -5,11 +5,11 @@ delete from your team.
 
 **Note:**
 This program will ask you a series of inputs:
-1-) Add a player
-2-) Delete a player
-3-) Search for a player by name
-4-) Search for a player by worth
-5-) Display your currently formed team
+- Add a player
+- Delete a player
+- Search for a player by name
+- Search for a player by worth
+- Display your currently formed team
 
 Keep the following variables in mind when running the program:
 - G -> Goalkeeper
