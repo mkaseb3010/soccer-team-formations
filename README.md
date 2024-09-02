@@ -1,1 +1,18 @@
-# soccer-team-formations
+This is a program written with C using advanced linked lists to form a soccer team. The program 
+will allow you to add, delete, and search by name or value of the player. The program will deal
+with any duplicate players you will try to add or a non-existent player you try to search for or
+delete from your team.
+
+**Note:**
+This program will ask you a series of inputs:
+1-) Add a player
+2-) Delete a player
+3-) Search for a player by name
+4-) Search for a player by worth
+5-) Display your currently formed team
+
+Keep the following variables in mind when running the program:
+- G -> Goalkeeper
+- D -> Defender
+- M -> Midfielder
+- S -> Striker
