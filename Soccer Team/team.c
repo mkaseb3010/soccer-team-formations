@@ -1,13 +1,4 @@
-// EECS2031 team.c
-//
-// Program for maintaining a personal team.
-//
-//
-// Uses a linked list to hold the team players.
-//
-// Author: <Mazen Kaseb>
-// Student Info: <217741299>
-
+// Author: Mazen Kaseb
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,11 +6,8 @@
 #include <string.h>
 #include <assert.h>
 
-//**********************************************************************
 // Linked List Definitions
-//  Define your linked list node and pointer types
 //  here for use throughout the file.
-//
 struct Player {
     char *firstName;
     char *familyName;
@@ -28,12 +16,8 @@ struct Player {
     struct Player *next;
 };
 
-//**********************************************************************
 // Linked List Function Declarations
-//
 // Functions that modify the linked list.
-//   Declare your linked list functions here.
-//
 struct Player *addItem(struct Player *node, struct Player *head);
 struct Player *deleteItem(char *familyName, struct Player *head);
 struct Player *searchPlayer(char *familyName, struct Player *head);
@@ -42,9 +26,8 @@ void printPlayers(struct Player *head);
 void printPlayer(struct Player *head);
 struct Player *deleteList(struct Player *head);
 
-//**********************************************************************
 // Support Function Declarations
-//
+
 
 void safegets(char s[], int arraySize);        // gets without buffer overflow
 void familyNameDuplicate(char familyName[]);   // marker/tester friendly
@@ -56,9 +39,7 @@ void printTeamTitle(void);
 void printNoPlayersWithLowerValue(int value);
 int getEnumeration(char position); // Enumerates positions G, D, M, S.
 
-//**********************************************************************
 // Program-wide Constants
-//
 
 const int MAX_LENGTH = 1023;
 const char NULL_CHAR = '\0';
@@ -67,11 +48,6 @@ const char GOALKEEPER = 'G';
 const char DEFENDER = 'D';
 const char MIDFIELDER = 'M';
 const char STRIKER = 'S';
-
-
-//**********************************************************************
-// Main Program
-//
 
 int main(void) {
     const char bannerString[]
@@ -208,7 +184,6 @@ int main(void) {
     exit(0); // Return with no problems.
 }
 
-//**********************************************************************
 // Support Function Definitions
 
 // Function to get a line of input without overflowing target char array.
